@@ -1,3 +1,4 @@
-h1 {
-  color: blue;
+.weather-app {
+  border: 10px;
+  border-color: blue;
 }
