@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Mukta", sans-serif;
 }
 
 h1 {
@@ -25,7 +25,7 @@ li {
   line-height: 19px;
 }
 
-li::first-letter {
+li:first-letter {
   text-transform: capitalize;
 }
 .weather-app-wrapper {
@@ -38,6 +38,7 @@ li::first-letter {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 10px;
+  background-color: #ßffffff;
 }
 
 .overview {
@@ -48,6 +49,8 @@ li::first-letter {
   margin-right: 10px;
   height: 64px;
   width: 64px;
+  border-radius: 2px;
+  border-color: black;
 }
 .weather-temp strong {
   color: rgb(33 33 33);
@@ -60,4 +63,9 @@ li::first-letter {
   position: relative;
   font-size: 16px;
   top: -34px;
+}
+
+.icon {
+  color: red;
+  border-width: 2px;
 }
