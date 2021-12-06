@@ -113,6 +113,9 @@ li:first-letter {
   text-decoration: none;
 }
 
+.btn {
+  text-align: center;
+}
 .weather-temp .active:hover {
   text-decoration: none;
 }
