@@ -3,11 +3,18 @@ body {
 }
 
 h1 {
-  color: #878787;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.light-mode h1 {
+  color: black;
 }
 
 ul {
@@ -17,12 +24,19 @@ ul {
 
 li {
   list-style: none;
-  color: rgb(135, 135, 135);
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+}
+
+.dark-mode li {
+  color: white;
+}
+
+.light-mode li {
+  color: black;
 }
 
 li:first-letter {
@@ -38,7 +52,15 @@ li:first-letter {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 10px;
-  background-color: #ffffff;
+}
+
+.light-mode .weather-app {
+  background-color: #bde0fe;
+  color: black;
+}
+.dark-mode .weather-app {
+  background-color: grey;
+  color: white;
 }
 
 .overview {
@@ -52,11 +74,18 @@ li:first-letter {
   border-radius: 2px;
   border-color: black;
 }
+
 .weather-temp strong {
-  color: rgb(33 33 33);
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
+}
+.dark-mode .weather-temp strong {
+  color: white;
+}
+
+.light-mode .weather-temp strong {
+  color: rgb(33 33 33);
 }
 
 .weather-temp .units {
@@ -65,8 +94,14 @@ li:first-letter {
   top: -34px;
 }
 
-.weather-temp .active {
-  color: rgb(135, 135, 135);
+.dark-mode .weather-temp .active {
+  color: white;
+  cursor: default;
+  text-decoration: none;
+}
+
+.light-mode .weather-temp .active {
+  color: black;
   cursor: default;
   text-decoration: none;
 }

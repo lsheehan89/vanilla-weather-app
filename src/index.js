@@ -22,6 +22,18 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function formatHour(timestamp) {
+  let date = new Date(timestamp);
+  let currentHours = date.getHours();
+  return `${currentHours}`;
+}
+
+function formatSunsetTime(timestamp) {
+  let date = new Date(timestamp);
+  let sunsetHours = date.getHours();
+  return `${sunsetHours}`;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -32,6 +44,7 @@ function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
 
   celsiusTemperature = response.data.main.temp;
+  console.log(response.data);
 
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
@@ -44,6 +57,18 @@ function displayTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  let sunsetHour = formatSunsetTime(response.data.sys.sunset * 1000);
+  let currentHour = formatHour(response.data.dt * 1000);
+  console.log(sunsetHour);
+  console.log(currentHour);
+
+  if (currentHour >= sunsetHour) {
+    mode.classList.remove("light-mode");
+    mode.classList.add("dark-mode");
+  } else {
+    mode.classList.add("light-mode");
+    mode.classList.remove("dark-mode");
+  }
 }
 
 function search(city) {
@@ -85,5 +110,7 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+let mode = document.querySelector("#mode");
 
 search("New York");
