@@ -57,7 +57,14 @@ li:first-letter {
 }
 
 .light-mode .weather-app {
-  background-color: #ffd384;
+  background-image: linear-gradient(
+    to right top,
+    #ffc300,
+    #ffbd00,
+    #ffb700,
+    #ffb000,
+    #ffaa00
+  );
   color: black;
 }
 .dark-mode .weather-app {
@@ -121,7 +128,7 @@ li:first-letter {
 }
 
 .light-mode .btn {
-  background-color: #ffab73;
+  background-color: #ff7b00;
 }
 
 .light-mode .btn:hover {
