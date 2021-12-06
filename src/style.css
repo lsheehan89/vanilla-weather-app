@@ -7,6 +7,8 @@ h1 {
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .dark-mode h1 {
@@ -44,7 +46,7 @@ li:first-letter {
 }
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 30px-auto;
+  margin: 40px-auto;
 }
 .weather-app {
   max-width: 600px;
@@ -55,11 +57,18 @@ li:first-letter {
 }
 
 .light-mode .weather-app {
-  background-color: #bde0fe;
+  background-color: #ffd384;
   color: black;
 }
 .dark-mode .weather-app {
-  background-color: grey;
+  background-image: linear-gradient(
+    to right top,
+    #3b0944,
+    #440d48,
+    #4d104c,
+    #561450,
+    #5f1854
+  );
   color: white;
 }
 
@@ -71,8 +80,6 @@ li:first-letter {
   margin-right: 10px;
   height: 64px;
   width: 64px;
-  border-radius: 2px;
-  border-color: black;
 }
 
 .weather-temp strong {
@@ -108,4 +115,16 @@ li:first-letter {
 
 .weather-temp .active:hover {
   text-decoration: none;
+}
+
+.light-mode .btn {
+  background-color: #ffab73;
+}
+
+.light-mode .btn:hover {
+  background-color: #e05d5d;
+}
+
+.dark-mode .btn {
+  background-color: #3b0944;
 }
