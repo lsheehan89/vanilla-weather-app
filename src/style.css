@@ -38,7 +38,7 @@ li:first-letter {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 10px;
-  background-color: #ßffffff;
+  background-color: #ffffff;
 }
 
 .overview {
@@ -65,7 +65,12 @@ li:first-letter {
   top: -34px;
 }
 
-.icon {
-  color: red;
-  border-width: 2px;
+.weather-temp .active {
+  color: rgb(135, 135, 135);
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temp .active:hover {
+  text-decoration: none;
 }
