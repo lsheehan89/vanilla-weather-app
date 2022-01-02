@@ -175,12 +175,6 @@ form.addEventListener("submit", handleSubmit);
 let button = document.querySelector("#search-location");
 button.addEventListener("click", getCurrentPosition);
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
-
 let mode = document.querySelector("#mode");
 
 search("New York");
