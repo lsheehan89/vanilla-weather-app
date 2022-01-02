@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
@@ -90,7 +90,7 @@ li:first-letter {
 }
 
 .weather-temp strong {
-  font-size: 64px;
+  font-size: 56px;
   line-height: 1;
   font-weight: 400;
 }
@@ -120,9 +120,6 @@ li:first-letter {
   text-decoration: none;
 }
 
-.btn {
-  text-align: center;
-}
 .weather-temp .active:hover {
   text-decoration: none;
 }
@@ -137,4 +134,27 @@ li:first-letter {
 
 .dark-mode .btn {
   background-color: #3b0944;
+}
+
+.btn {
+  border-color: #219ebc;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: 000;
+  opacity: 0.6;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }

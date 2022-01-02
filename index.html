@@ -38,31 +38,30 @@
                   class="btn btn-primary w-100"
                 />
               </div>
-      
-
-          <form id="location-form">
-            <div class="col-md-2">
-              <button
-                type="click"
-                id="search-location"
-                class="btn btn-primary w-100"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-geo-alt-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-                  />
-                </svg>
-              </button>
             </div>
 
-          </form>
+            <form id="location-form">
+              <div class="col-md-2">
+                <button
+                  type="click"
+                  id="search-location"
+                  class="btn btn-primary w-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
           </form>
 
           <div class="overview">
@@ -75,7 +74,7 @@
           </div>
 
           <div class="row">
-            <div class="col-6">
+            <div class="col-8">
               <div class="clearfix weather-temp">
                 <img src="" alt="Clear" id="icon" class="float-left" />
                 <div class="float-left">
@@ -88,27 +87,44 @@
               </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-4">
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
           </div>
+          <div class="weather-forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-date">Thu</div>
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="42"
+                />
+                <div class="weather-forecast-temperature">
+                  <span class="weather-forecast-temperature-max">18°</span>
+                  <span class="weather-forecast-temperature-min">12°</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <small>
-        <a
-          href="https://github.com/lsheehan89/vanilla-weather-app"
-          target="_blank"
-          >Open-source code</a
-        >
-        by Lisa Sheehan and
-        <a href="https://trusting-kare-bdf773.netlify.app/" target="blank"
-          >hosted on Netlify</a
-        >
-      </small>
     </div>
+
+    <small>
+      <a
+        href="https://github.com/lsheehan89/vanilla-weather-app"
+        target="_blank"
+        >Open-source code</a
+      >
+      by Lisa Sheehan and
+      <a href="https://trusting-kare-bdf773.netlify.app/" target="blank"
+        >hosted on Netlify</a
+      >
+    </small>
 
     <script src="src/index.js"></script>
   </body>
